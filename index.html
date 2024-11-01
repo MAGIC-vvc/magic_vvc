@@ -3,82 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BEZ_NAYOBA_TOCHNA</title>
+    <title>Consular Germany</title>
     <style>
         /* Основные стили для страницы */
         body {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #f3f3f3;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
         }
 
-        h1 {
-            font-size: 36px;
-            color: #333;
-            margin-bottom: 20px;
-        }
-
-        h2 {
-            font-size: 24px;
-            color: #555;
-            margin-bottom: 30px;
-        }
-
-        .buttons-container {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        /* Стили для кнопок */
-        .button {
-            padding: 15px 30px;
-            font-size: 18px;
-            color: #fff;
-            background-color: #007bff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            text-decoration: none;
+        /* Шапка */
+        .header {
+            background-color: #b00;
+            color: white;
+            padding: 10px 0;
             text-align: center;
-            width: 200px;
         }
 
-        .button:hover {
-            background-color: #0056b3;
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
         }
 
-        /* Специальный стиль для кнопки "Стать хохлом" */
-        .button-hohlom {
-            background-color: #ff4d4d;
+        /* Меню */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #b00;
         }
 
-        .button-hohlom:hover {
-            background-color: #cc0000;
+        .navbar a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .navbar a:hover {
+            background-color: #a00;
+        }
+
+        /* Основной контент */
+        .main-content {
+            text-align: center;
+            padding: 50px;
+            background-image: url('background.jpg'); /* Замените на URL вашего фона */
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        .main-content h2 {
+            font-size: 28px;
+            color: #ff0000; /* Красный цвет для выделения */
+        }
+
+        .main-content p {
+            font-size: 18px;
+            max-width: 600px;
+            margin: auto;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* Секция */
+        .section {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            background-color: #e2e2e2;
+        }
+
+        .section div {
+            width: 30%;
+            padding: 15px;
+            background: white;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .section div h3 {
+            margin-top: 0;
         }
     </style>
 </head>
 <body>
 
-    <!-- Заголовок сайта -->
-    <h1>BEZ_NAYOBA_TOCHNA</h1>
+    <!-- Шапка -->
+    <div class="header">
+        <h1>Consular Germany</h1>
+    </div>
 
-    <!-- Основной текст на странице -->
-    <h2>Мамат кунем</h2>
+    <!-- Меню -->
+    <div class="navbar">
+        <a href="#home">Домашняя страница</a>
+        <a href="#documents">Подача документов</a>
+        <a href="#visa">Получение визы</a>
+        <a href="#info">Информация</a>
+        <a href="status.html">Статус заявления</a> <!-- Обновленный путь к новой странице -->
+        <a href="#contact">Контакты</a>
+    </div>
 
-    <div class="buttons-container">
-        <!-- Кнопки с перенаправлением на t.me/magic_vvc -->
-        <a href="https://t.me/magic_vvc" class="button" target="_blank">Стать узбеком</a>
-        <a href="https://t.me/magic_vvc" class="button" target="_blank">Стать таджиком</a>
-        <a href="https://t.me/magic_vvc" class="button" target="_blank">Стать казахом</a>
+    <!-- Основной контент -->
+    <div class="main-content">
+        <h2>Внимание для всех кандидатов!</h2>
+        <p>С 20.10.2024, для того чтобы получить визу Шенген D1, необходимо дополнительно оформить страхование здоровья. Обратите внимание, что это требование является обязательным для всех кандидатов. Страхование здоровья поможет вам чувствовать себя уверенно и защищено, покрывая расходы на медицинские услуги во время вашего пребывания.</p>
+    </div>
 
-        <!-- Кнопка с перенаправлением на https://ab3.army/ -->
-        <a href="https://ab3.army/" class="button button-hohlom" target="_blank">Стать хохлом</a>
+    <!-- Секции -->
+    <div class="section">
+        <div>
+            <h3>Необходимые документы</h3>
+            <p>Подготовьте необходимые документы к назначенному дню подачи документов.</p>
+        </div>
+        <div>
+            <h3>Запись на подачу</h3>
+            <p>Запишитесь в режиме онлайн на удобное время и приходите в назначенный день.</p>
+        </div>
+        <div>
+            <h3>Статус заявления</h3>
+            <p><a href="status.html">Проверьте статус вашего заявления</a></p> <!-- Ссылка на новую страницу -->
+        </div>
     </div>
 
 </body>
