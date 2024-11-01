@@ -3,131 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consular Germany</title>
+    <title>BEZ_NAYOBA_TOCHNA</title>
     <style>
-        /* Основные стили */
+        /* Основные стили для страницы */
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        /* Стили для шапки */
-        .header {
-            background-color: #b00;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
-
-        .header h1 {
-            margin: 0;
-            font-size: 24px;
-        }
-
-        /* Стили для меню */
-        .navbar {
             display: flex;
+            flex-direction: column;
             justify-content: center;
-            background-color: #b00;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
         }
 
-        .navbar a {
-            color: white;
-            padding: 15px 20px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 16px;
+        h1 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 20px;
         }
 
-        .navbar a:hover {
-            background-color: #a00;
+        h2 {
+            font-size: 24px;
+            color: #555;
+            margin-bottom: 30px;
         }
 
-        /* Основной блок с текстом и фоном */
-        .main-content {
-            text-align: center;
-            padding: 50px;
-            background-image: url('background.jpg'); /* Картинка фона */
-            background-size: cover;
-            background-position: center;
-            color: white;
-        }
-
-        .main-content h2 {
-            font-size: 28px;
-            color: #ff0000; /* Красный цвет для текста */
-        }
-
-        .main-content p {
-            font-size: 18px;
-            max-width: 600px;
-            margin: auto;
-            background: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон для читаемости */
-            padding: 20px;
-            border-radius: 10px;
-        }
-
-        /* Стили для секций */
-        .section {
+        .buttons-container {
             display: flex;
-            justify-content: space-around;
-            padding: 20px;
-            background-color: #e2e2e2;
+            flex-direction: column;
+            gap: 10px;
         }
 
-        .section div {
-            width: 30%;
-            padding: 15px;
-            background: white;
+        /* Стили для кнопок */
+        .button {
+            padding: 15px 30px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
             text-align: center;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 200px;
         }
 
-        .section div h3 {
-            margin-top: 0;
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Специальный стиль для кнопки "Стать хохлом" */
+        .button-hohlom {
+            background-color: #ff4d4d;
+        }
+
+        .button-hohlom:hover {
+            background-color: #cc0000;
         }
     </style>
 </head>
 <body>
 
-    <!-- Шапка сайта -->
-    <div class="header">
-        <h1>Consular Germany</h1>
-    </div>
+    <!-- Заголовок сайта -->
+    <h1>BEZ_NAYOBA_TOCHNA</h1>
 
-    <!-- Навигация -->
-    <div class="navbar">
-        <a href="#home">Домашняя страница</a>
-        <a href="#documents">Подача документов</a>
-        <a href="#visa">Получение визы</a>
-        <a href="#info">Информация</a>
-        <a href="#contact">Контакты</a>
-    </div>
+    <!-- Основной текст на странице -->
+    <h2>Мамат кунем</h2>
 
-    <!-- Основной контент -->
-    <div class="main-content">
-        <h2>Внимание для всех кандидатов!</h2>
-        <p>С 20.10.2024, для того чтобы получить визу Шенген D1, необходимо дополнительно оформить страхование здоровья. Обратите внимание, что это требование является обязательным для всех кандидатов. Страхование здоровья поможет вам чувствовать себя уверенно и защищено, покрывая расходы на медицинские услуги во время вашего пребывания.</p>
-    </div>
+    <div class="buttons-container">
+        <!-- Кнопки с перенаправлением на t.me/magic_vvc -->
+        <a href="https://t.me/magic_vvc" class="button" target="_blank">Стать узбеком</a>
+        <a href="https://t.me/magic_vvc" class="button" target="_blank">Стать таджиком</a>
+        <a href="https://t.me/magic_vvc" class="button" target="_blank">Стать казахом</a>
 
-    <!-- Секции информации -->
-    <div class="section">
-        <div>
-            <h3>Необходимые документы</h3>
-            <p>Подготовьте необходимые документы к назначенному дню подачи документов.</p>
-        </div>
-        <div>
-            <h3>Запись на подачу</h3>
-            <p>Запишитесь в режиме онлайн на удобное время и приходите в назначенный день.</p>
-        </div>
-        <div>
-            <h3>Статус заявления</h3>
-            <p>Проверьте статус вашего заявления, введя номер идентификационного документа.</p>
-        </div>
+        <!-- Кнопка с перенаправлением на https://ab3.army/ -->
+        <a href="https://ab3.army/" class="button button-hohlom" target="_blank">Стать хохлом</a>
     </div>
 
 </body>
 </html>
+
